@@ -47,8 +47,11 @@ init();
 
 function init() {
   // TODO 5, Part 2: initialize the snake
-  
-  
+  snake.body = []; // Starty with an empty body 
+  makeSnakeSquare(10, 10); // Create the first square in the middle of the board
+  makeSnakeSquare(10, 9); // Create a second square to the lef5t of the first
+  makeSnakeSquare(10, 8); // Create va third square to the left of the second 
+  snake.head = snake.body[0]; // Mark the first segment as the head 
   // TODO 4, Part 3: initialize the apple
 
 
