@@ -54,7 +54,7 @@ $(document).on("keyup", handleKeyUp);
   function newFrame() {
     repositionGameItem();
 console.log(walker.x, walker.y);
-redrawGameItem()
+redrawGameItem();
   }
  
   /*
