@@ -160,7 +160,13 @@ function moveSnake() {
     stored in the Array snake.body and each part knows its current
     column/row properties.
   */
+  for (var i = snake.body.length - 1; i > 0; i--) {
+  var part = snake.body[i];
+  var nextPart = snake.body[i - 1];
 
+  part.column = nextPart.column;
+  part.row = nextPart.row;
+}
 
 
 
